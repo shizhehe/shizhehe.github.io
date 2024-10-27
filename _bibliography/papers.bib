@@ -4,11 +4,45 @@
 @misc{he2024soeso3equivariant3dmri,
       title={SOE: SO(3)-Equivariant 3D MRI Encoding}, 
       author={He, Shizhe and Paschali, Magdalini and Ouyang, Jiahong and Masood, Adnan and Chaudhari, Akshay and Adeli, Ehsan},
+      abstract="Representation learning has become increasingly important, 
+                especially as powerful models have shifted towards learning 
+                latent representations before fine-tuning for downstream tasks. 
+                This approach is particularly valuable in leveraging the 
+                structural information within brain anatomy. However, a common 
+                limitation of recent models developed for MRIs is their tendency 
+                to ignore or remove geometric information, such as translation 
+                and rotation, thereby creating invariance with respect to 
+                geometric operations. We contend that incorporating knowledge 
+                about these geometric transformations into the model can 
+                significantly enhance its ability to learn more detailed 
+                anatomical information within brain structures. As a result, we 
+                propose a novel method for encoding 3D MRIs that enforces 
+                equivariance with respect to all rotations in 3D space, in other 
+                words, SO(3)-equivariance (SOE). By explicitly modeling this 
+                geometric equivariance in the representation space, we ensure 
+                that any rotational operation applied to the input image space 
+                is also reflected in the embedding representation space. This 
+                approach requires moving beyond traditional representation 
+                learning methods, as we need a representation vector space that 
+                allows for the application of the same SO(3) operation in that 
+                space. To facilitate this, we leverage the concept of vector 
+                neurons. The representation space formed by our method captures 
+                the brain's structural and anatomical information more 
+                effectively. We evaluate SOE pretrained on the structural MRIs 
+                of two public data sets with respect to the downstream task of 
+                predicting age and diagnosing Alzheimer's Disease from 
+                T1-weighted brain scans of the ADNI data set. We demonstrate 
+                that our approach not only outperforms other methods but is also 
+                robust against various degrees of rotation along different axes.",
       year={2024},
       eprint={2410.12053},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2410.12053}, 
+      html={https://arxiv.org/abs/2410.12053},
+      pdf={https://arxiv.org/pdf/2410.12053},
+      selected={true},
+      google_scholar_id={d1gkVwhDpl0C},
       preview={soe-3d-mri.png}
 }
 
@@ -25,6 +59,17 @@
                that both the type and amount of training data are less
                important for low acceleration factors.",
   publisher = "Physikalisch-Technische Bundesanstalt (PTB)",
-  year      =  2024
+  url={https://oar.ptb.de/resources/show/10.7795/320.202401},
+  doi={https://oar.ptb.de/resources/show/10.7795/320.202401},
+  pdf={he2024domainshift.pdf},
+  selected={true},
+  year={2024},
 }
-]
+
+@inproceedings{uhfismrmabstract,
+  title     = "Learning-based Cardiac Cine MRI Reconstruction at 7T",
+  author    = "Kofler, Andreas and He, Shizhe and Rueckert, Daniel and Schaeffter, Tobias and Schmitter, Sebastian and Kolbitsch, Christoph and Aigner, Christoph and Hammernik, Kerstin",
+  pdf={uhfismrmabstract.pdf},
+  selected={false},
+  year={2022},
+}
